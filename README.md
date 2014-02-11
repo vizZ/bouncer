@@ -1,3 +1,5 @@
+<img src="https://raw.github.com/vizZ/bouncer/master/img/bouncer.png" width="250px" />
+
 Bouncer
 =======
 
