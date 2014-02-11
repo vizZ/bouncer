@@ -1,3 +1,3 @@
 #!/bin/bash
 
-git rev-list --reverse $1..$2 | while read rev; do git checkout --quiet $rev && $3 && if [ !"$?" = "0" ]; then exit $?; fi; git reset --hard; done
+git rev-list --reverse $1..$2 | while read rev; do git checkout --quiet $rev && $3 && if [ $? -ne 0 ]; then exit $?; fi; git reset --hard; done
