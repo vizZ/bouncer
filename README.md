@@ -8,6 +8,10 @@ No motherfuckin' commit will ever enter the motherfuckin' stripclub if it breaks
 
 You go learn git, motherfucker!
 
+### How does it work?
+
+The Bouncer checks out every single commit from `git rev-list --reverse {start_commit}..{end_commit}` and runs the specified verification script.
+
 ### Usage
 
 	> bouncer {start_commit} {end_commit} {path_to_verification_script} {optional_script_args}
